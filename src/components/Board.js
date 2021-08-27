@@ -8,10 +8,10 @@ const style = {
     height: '250px',
     margin: '40px auto',
     display: 'grid',
-    gridTemplate: 'repeat(3, 1fr) / repeat(3, 1fr)'
+    gridTemplate: 'repeat(3, 1fr) / repeat(3, 1fr)',
 }
 
-function Board({squares, onClick}) {
+const Board = ({squares, onClick}) => {
     return (
         <div style={style}>
             {squares.map((square, i) => (
